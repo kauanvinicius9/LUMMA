@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/lumma
+    url: jdbc:postgresql://localhost:8080/lumma
     username: postgres
     password: postgres
 
