@@ -1,0 +1,16 @@
+com\lumma\backend\entity\BaseEntity.class
+com\lumma\backend\entity\Chat.class
+com\lumma\backend\entity\enums\TaskPriority.class
+com\lumma\backend\entity\Task.class
+com\lumma\backend\config\MenthorConfig.class
+com\lumma\backend\entity\enums\TaskStatus.class
+com\lumma\backend\dto\response\ChatResponse.class
+com\lumma\backend\service\AIService.class
+com\lumma\backend\entity\User.class
+com\lumma\backend\dto\request\ChatRequest.class
+com\lumma\backend\repository\TaskRepository.class
+com\lumma\backend\config\RestClientConfig.class
+com\lumma\backend\repository\UserRepository.class
+com\lumma\backend\client\MenthorClient.class
+com\lumma\backend\BackendApplication.class
+com\lumma\backend\controller\ChatController.class

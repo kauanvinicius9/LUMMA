@@ -1,8 +1,8 @@
 package com.lumma.backend.client;
 
-import com.lumma.config.MenthorConfig;
-import com.lumma.dto.ChatRequest;
-import com.lumma.dto.ChatResponse;
+import com.lumma.backend.config.MenthorConfig;
+import com.lumma.backend.dto.request.ChatRequest;
+import com.lumma.backend.dto.response.ChatResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;

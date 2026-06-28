@@ -1,8 +1,11 @@
 package com.lumma.backend.entity;
 
+import com.lumma.backend.entity.enums.TaskPriority;
+import com.lumma.backend.entity.enums.TaskStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
 import java.time.LocalDateTime;
 
 @Getter
@@ -35,5 +38,14 @@ public class Task extends BaseEntity {
 
     @Column(name="due_date")
     private LocalDateTime dueDate;
+
+    @Column(name="completed_at")
+    private LocalDateTime completedAt;
+
+    @Column(nullable=false)
+    private Boolean favorite=false;
+
+    @Column(nullable=false)
+    private Boolean archived=false;
 
 }
