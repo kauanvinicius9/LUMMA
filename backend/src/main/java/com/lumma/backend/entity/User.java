@@ -1,26 +1,21 @@
 package com.lumma.backend.entity;
 
-import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import java.util.UUID;
 
-@Getter
-@Setter
 @Entity
-@Table(name="users", schema="lumma")
-public class User extends BaseEntity {
+@Table(name = "users")
+public class User {
 
-    @Column(nullable=false)
+    @Id
+    @GeneratedValue
+    private UUID id;
     private String name;
-
-    @Column(nullable=false, unique=true)
     private String email;
-
-    @Column(nullable=false)
     private String password;
+    private Boolean active;
 
-    @Column(name="avatar_url")
-    private String avatarUrl;
-
-    private String status;
 }
