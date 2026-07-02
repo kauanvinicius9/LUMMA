@@ -1,6 +1,6 @@
 package com.lumma.backend.service;
 
-import com.lumma.backend.dto.LoginRequest;
+import com.lumma.backend.dto.request.LoginRequest;
 import com.lumma.backend.entity.User;
 import com.lumma.backend.repository.UserRepository;
 
@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AuthService {
+public class LoginService {
 
     @Autowired
     private UserRepository repository;
@@ -25,7 +25,7 @@ public class AuthService {
 
         if (!passwordEncoder.matches(request.password(), user.getPassword())) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                .body("Senha inválida")
+                .body("Senha inválida");
         }
 
         return ResponseEntity.ok("Login realizado");
